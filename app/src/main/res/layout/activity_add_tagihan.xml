@@ -67,5 +67,57 @@
         android:layout_below="@id/til_bill_desc"
         android:theme="@style/Widget.MaterialComponents.Chip.Entry"
         app:closeIconEnabled="true"
-        app:closeIconVisible="true"/>
+        app:closeIconVisible="true"
+        android:visibility="gone"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_add_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_bill_desc"
+        android:theme="@style/TextInputLayoutAppearance"
+        android:textColorHint="@color/colorDarkGray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_add_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Member"
+            android:textColor="@android:color/tab_indicator_text"
+            android:inputType="textMultiLine"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cg_member"
+            android:visibility="gone">
+        </com.google.android.material.chip.ChipGroup>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_per_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_add_member"
+        android:theme="@style/TextInputLayoutAppearance"
+        android:textColorHint="@color/colorDarkGray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_per_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pay Per Person"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_per_person"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
 </RelativeLayout>
