@@ -48,7 +48,9 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin">
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:textColorHint="@color/colorDarkGray">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_username"
@@ -65,7 +67,9 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_below="@+id/til_username">
+            android:layout_below="@+id/til_username"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:textColorHint="@color/colorDarkGray">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_password"
