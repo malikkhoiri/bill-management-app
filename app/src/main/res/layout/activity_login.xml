@@ -90,7 +90,6 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/til_password"
             android:id="@+id/btn_login"
-            android:background="@drawable/button_primary_effect"
             android:textColor="@android:color/white"
             android:textAllCaps="false"/>
 
